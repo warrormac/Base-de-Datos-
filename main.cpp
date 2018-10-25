@@ -7,34 +7,51 @@
 #include <typeinfo>
 #include "buscador.h"
 #include "juego.h"
+#include "editador.h"
 
 using namespace std;
 
 int main()
 {
-    string team;
+    string game;
+    int x=1;   //Este decide la opcion del menu 
     int z=0;
     string *ptr;
-    cout<<"Ingrese nombre del equipo: ";
-    while (z==0)
+    if (x==1)  //buscador de categorias
     {
-        cin>>team;
-        ptr=&team;
-
-        juego nomb(team);
-
-        nomb.nombres();
-
-        z=nomb.buscar_juego();
-
-
-        if (z==0)
+        while (z==0)
         {
-            cout<<"Equipo invalido, intente de nuevo: \n";
-            system("pause");
+            cout<<"Ingrese su categoria: ";
+            cin>>game;
+            ptr=&game;
+
+            juego nomb(ptr);
+
+            nomb.nombres();
+
+            z=nomb.buscar_juego();
+
+
+            if (z==0)
+            {
+                cout<<"Categoria invalida, intente de nuevo: \n";
+                system("pause");
+            }
         }
+        buscador bus(ptr);
+        bus.busca();
+        system("pause");
     }
-    buscador bus(ptr);
-    bus.busca();
-    system("pause");
+
+
+    if (x==2)   //buscador de juego   
+    {
+        cout<<"ingrese el nombre del juego: ";
+        cin>>game;
+        ptr=&game;
+        
+        editador busc(ptr);
+
+    }
+
 }
