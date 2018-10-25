@@ -1,16 +1,18 @@
+#include <string>
 #ifndef EDITADOR_H
 #define EDITADOR_H
 
+using namespace std;
 
 class editador
 {
     public:
-        editador();
-        virtual ~editador();
+        string nombre;
+        editador(string *x):nombre(*x){};
 
-    protected:
 
-    private:
+    public:
+        void buscar();
 };
 
 #endif // EDITADOR_H
