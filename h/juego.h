@@ -4,18 +4,24 @@
 
 
 using namespace std;
+
 class juego
 {
      public:
         string name;
         string *ptr;
-        juego(string x):name(x){}
+        juego(string *x):name(*x){}
 
 
     public:
 
         void nombres();
         int buscar_juego();
+
+        ~juego()
+        {
+            delete ptr;
+        }
 };
 
 
