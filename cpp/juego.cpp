@@ -1,11 +1,12 @@
 #include "juego.h"
-
 #include <iostream>
 #include <string>
 #include <stdlib.h>
 #include <fstream>
 
 using namespace std;
+
+
 
 void juego::nombres()
 {
