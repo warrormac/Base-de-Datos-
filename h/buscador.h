@@ -16,6 +16,7 @@ class buscador
 
         void busca();
 
+
 };
 
 #endif // BUSCADOR_H
