@@ -1,16 +1,17 @@
 #include <string>
+#include "buscador.h"
 #ifndef JUEGO_H
 #define JUEGO_H
 
 
 using namespace std;
 
-class juego
+class juego: public buscador
 {
      public:
         string name;
         string *ptr;
-        juego(string *x):name(*x){}
+        juego(string *x):name(*x){};
 
 
     public:
