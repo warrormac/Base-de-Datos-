@@ -7,7 +7,6 @@
 using namespace std;
 
 
-
 void juego::nombres()
 {
         string categorias[8];
