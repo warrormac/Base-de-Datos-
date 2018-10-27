@@ -5,13 +5,17 @@
 
 using namespace std;
 
-class buscador
+class buscador //clase padre
 {
-        public:
+        protected:
         ifstream arch;
         string texto;
         string name;
-        buscador(string *ptr):name(*ptr){};
+        //buscador(string *ptr):name(*ptr){};
+
+        public:
+        void set_values (string *a)
+            { name=*a;}
 
 
         void busca();
