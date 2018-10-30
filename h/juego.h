@@ -17,6 +17,7 @@ class juego: public buscador
     public:
 
         void nombres();
+        void nom_juego();
         int buscar_juego();
 
         ~juego()
