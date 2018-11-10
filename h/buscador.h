@@ -18,6 +18,7 @@ class buscador //clase padre
             { name=*a;}
 
 
+        int menu(string );
         void busca();
 
 
