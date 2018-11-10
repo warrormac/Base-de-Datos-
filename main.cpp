@@ -6,43 +6,44 @@
 #include <typeinfo>
 #include "buscador.h"
 #include "juego.h"
-#include "editador.h"
 
 using namespace std;
 
 int main()
 {
     string game;
-    int x=1;   //Este decide la opcion del menu
+    int x=1,y;   //Este decide la opcion del menu
     int z=0;
     int cat=0;
     string *ptr;
-    if (x==1)  //buscador de categorias
+
+
+    while (x!=0) //este es el menu
     {
+        buscador p;
+        p.menu("menu");
+        cin>>x;
+        z=0;
+
         while (z==0)
         {
 
-            int op=2;
-            cout<< "presione 1 para ingresar alguna categoria, 0 para buscar en toda la base de datos.\n";
-            cin>>op;
-            while (op<0 && op>1)
+            if (x==1)
             {
-                cout<<"opcion invalida, intente de nuevo.\n";
-                cout<<"presione 1 para ingresar alguna categoria, 0 para buscar en toda la base de datos.\n";
-                cin>>op;
-            }
-            if (op==1)
-            {
-                cout<<"Ingrese su categoria: ";
+                game="categorias";
+                ptr=&game;
+                juego nomb(ptr);
+                nomb.set_values(ptr);
+                nomb.busca();
+
+                cout<<"\nIngrese su categoria: ";
                 cin>>game;
                 ptr=&game;
 
-                juego nomb(ptr);
-                nomb.set_values(ptr);
-                nomb.nombres();
-
-                cat=nomb.buscar_juego();
-
+                juego nomb1(ptr);
+                nomb1.set_values(ptr);
+                nomb1.nombres();
+                cat=nomb1.buscar_juego();
 
                 if (cat==0)
                 {
@@ -51,12 +52,12 @@ int main()
                     system("pause");
                 }
                 else
-                    nomb.busca();
+                    nomb1.busca();
                 system("pause");
-
-
+                z=1;
             }
-            if (op==0)
+
+            if (x==2)
             {
                 cout<<"ingrese el nombre del juego: ";
                 cin>>game;
@@ -79,7 +80,5 @@ int main()
                 system("pause");
             }
         }
-
-
-        }
+    }
 }
