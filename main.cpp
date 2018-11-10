@@ -4,8 +4,10 @@
 #include <fstream>
 #include <sstream>
 #include <typeinfo>
-#include "buscador.h"
-#include "juego.h"
+#include "include/buscador.h"
+#include "include/juego.h"
+#include "include/ranking.h"
+#include "src\ranking.cpp"
 
 using namespace std;
 
@@ -53,7 +55,8 @@ int main()
                 }
                 else
                     nomb1.busca();
-                system("pause");
+                cout<<"Presione 2 si le gustaria revisar algun juego, sino presione 1";
+                cin>>x;
                 z=1;
             }
 
@@ -79,6 +82,42 @@ int main()
                     nom.busca();
                 system("pause");
             }
-        }
+             if (x==4)
+            {
+                string q;
+                int y;
+                string lista[5];
+                lista[1]="uno";lista[2]="dos";
+                lista[3]="tres";lista[4]="cuatro";
+                cout<<"Ingrese una categoria entre 1 a 4,\n(1 siendo los top sellers y 4 los que estan en sale): ";
+                cin>>q;
+                    if (q=="1" || q=="2" || q=="3" || q=="4")
+                    {
+                        stringstream conv(q);
+                        conv>>y;
+                        ranking<int> XX(1);
+                        XX.categoria();
+                        XX.ranks(y);
+                        z++;
+                    }
+                    if (q=="uno" || q=="dos" || q=="tres" || q=="cuatro")
+                    {
+
+
+                        for (int cont=0;cont<5;cont++)
+                        {
+                            if (q==lista[cont])
+                            {
+                                ranking<int> XX(1);
+                                XX.categoria();
+                                XX.ranks(cont);
+                                z++;
+                                break;
+                            }
+                        }
+                    }
+                    if (z==0){
+                        cout<<"Opcion invalida\nIngrese categoria de ranking de 1 a 4\n(1 siendo los top sellers y 4 los que estan en sale):  ";
+                        cin>>x;}}}
     }
 }
