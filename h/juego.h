@@ -9,9 +9,9 @@ using namespace std;
 class juego: public buscador
 {
      public:
-        string name;
+        string names;
         string *ptr;
-        juego(string *x):name(*x){};
+        juego(string *x):names(*x){};
 
 
     public:
@@ -20,10 +20,8 @@ class juego: public buscador
         void nom_juego();
         int buscar_juego();
 
-        ~juego()
-        {
-            delete ptr;
-        }
+        ~juego(){};
+
 };
 
 
