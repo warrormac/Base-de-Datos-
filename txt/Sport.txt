@@ -1,0 +1,9 @@
+Equipo		   Ataque    Mediocampo    Defensa
+
+Alemania            85	         85 	     84
+Argentina	    85		 81	     80
+Belgica		    85		 83	     83
+Brazil		    87		 86	     84
+España		    84		 86	     85
+Francia		    86		 84	     81
+Portugal	    85		 83	     82

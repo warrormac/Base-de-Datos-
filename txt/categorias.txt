@@ -1,0 +1,9 @@
+      Categorias 
+
+Action	 	Action-Adventure
+
+Adventure	Role-playing
+
+Simulation	Strategy
+
+Sport		Idle
