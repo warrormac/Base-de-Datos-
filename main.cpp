@@ -14,6 +14,7 @@ using namespace std;
 int main()
 {
     string game;
+
     int x=1,y;   //Este decide la opcion del menu
     int z=0;
     int cat=0;
@@ -32,15 +33,17 @@ int main()
 
             if (x==1)
             {
+                string game1;
                 game="categorias";
                 ptr=&game;
                 juego nomb(ptr);
                 nomb.set_values(ptr);
                 nomb.busca();
 
+                getline(cin,game1);
                 cout<<"\nIngrese su categoria: ";
-                cin>>game;
-                ptr=&game;
+                getline(cin,game1);
+                ptr=&game1;
 
                 juego nomb1(ptr);
                 nomb1.set_values(ptr);
@@ -62,9 +65,12 @@ int main()
 
             if (x==2)
             {
+                string game2;
+                getline(cin,game2);
                 cout<<"ingrese el nombre del juego: ";
-                cin>>game;
-                ptr=&game;
+                getline(cin,game2);
+                cout<<game2;
+                ptr=&game2;
 
                 juego nom(ptr);
                 nom.set_values(ptr);
@@ -81,6 +87,7 @@ int main()
                 else
                     nom.busca();
                 system("pause");
+                z=1;
             }
              if (x==4)
             {
@@ -120,4 +127,5 @@ int main()
                         cout<<"Opcion invalida\nIngrese categoria de ranking de 1 a 4\n(1 siendo los top sellers y 4 los que estan en sale):  ";
                         cin>>x;}}}
     }
+}
 }
