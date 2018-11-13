@@ -1,0 +1,13 @@
+Categoria RPG
+
+Juegos:
+
+    1.The Elder Scrolls V
+    2.The Witcher 
+    3.Dark Souls 3
+    4.Diablo 3
+    5.Fallout 76
+    6.WoW
+    7.Final Fantasy 15
+    8.South Park: The Stick of Truth
+ 

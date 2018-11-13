@@ -1,0 +1,13 @@
+	Tienda de Juegos
+
+	1.Categorias
+
+	2.Buscar un Juego
+
+	3.Comentarios
+	
+	4.Detalles de un Juego
+	
+	5.Creditos
+
+	0.Cerrar Programa
