@@ -1,10 +1,10 @@
 #include <string>
-#ifndef EDITADOR_H
-#define EDITADOR_H
+#ifndef EDITOR_H
+#define EDITOR_H
 
 using namespace std;
 
-class editador
+class editor
 {
     public:
         string nombre;
@@ -15,4 +15,38 @@ class editador
         void buscar();
 };
 
-#endif // EDITADOR_H
+class cliente {
+    
+   public:
+    string nombre;
+    int id;
+    string dir;
+    int cat;
+    
+    public:
+
+        void buscarcliente();
+        void categoria();
+        
+        ~cliente(){};
+
+};
+
+class kommentar {
+    
+   public:
+   string komment;
+    
+    public:
+
+        void buscarjuego();
+        void agregark();
+       
+
+        ~kommentar(){};
+
+};
+
+    
+        
+#endif // EDITOR_H
