@@ -33,7 +33,7 @@ ifstream lectura;
         {
             do
             {
-                cout<<"c\242digo de cliente no v\240lido!, intentalo nuevamente: ";
+                cout<<"codigo de cliente no valido, intentalo nuevamente: ";
                 cin.getline(auxCodigo,30);
             }
             while(strcmp(auxCodigo,"")==0);
@@ -50,11 +50,10 @@ ifstream lectura;
                 encontrado=true;
                 mostarRegistro(codigoModif);
 
-                cout<<"**********************************************";
-                cout<<"\n\n";
-                cout<<"Ingresa la nueva informaci\242n para el cliente\n\n";
+               
+                cout<<"Ingresa la nueva informacion para el cliente\n\n";
                 fflush(stdin);
-                cout<<"Ingresa el c\242digo del cliente: ";
+                cout<<"Ingresa el codigo del cliente: ";
                 cin.getline(auxCodigo,30);
                 if(strcmp(auxCodigo,codigoModif)==0)
                 {
@@ -78,16 +77,16 @@ ifstream lectura;
                             if(strcmp(codigoCliente,auxCodigo)==0)
                             {
                                 coincidencia=true;
-                                cout<<"\n\nYa existe un cliente con ese c\242digo!\n\n";
-                                cout<<"El cliente con ese c\242digo es: "<<nombre<<"\n\n";
-                                cout<<"Ingresa un c\242digo v\240lido!: ";
+                                cout<<"Ya existe un cliente con ese codigo!\n\n";
+                                cout<<"El cliente con ese codigo es: "<<nombre<<"\n\n";
+                                cout<<"Ingresa un codigo valido!: ";
                                 cin.getline(auxCodigo,30);
 
                                 if(strcmp(auxCodigo,"")==0)
                                 {
                                     do
                                     {
-                                        cout<<"\nc\242digo de cliente no v\240lido!, ";
+                                        cout<<"codigo de cliente no valido!, ";
                                         cout<<"intentalo nuevamente: ";
                                         cin.getline(auxCodigo,30);
                                     }
@@ -107,64 +106,3 @@ ifstream lectura;
                     }
                     while(coincidencia==true);
                 }
-                system(CLEAR);
-                cout<<"***Modificar los datos de un cliente***\n\n";
-                cout<<"Ingresa el c\242digo del cliente que deseas modificar: ";
-                cout<<codigoModif;
-                mostarRegistro(codigoModif);
-                cout<<"**********************************************";
-                cout<<"\n\n";
-                cout<<"Ingresa la nueva informaci\242n para el cliente\n\n";
-                cout<<"Ingresa el c\242digo del cliente: ";
-                cout<<auxCodigo;
-                cout<<"\n\n";
-                fflush(stdin);
-                cout<<"Ingresa el nombre del cliente: ";
-                cin.getline(auxNombre,30);
-                fflush(stdin);
-                cout<<"\n\n";
-                cout<<"Ingresa el domicilio del cliente: ";
-                cin.getline(auxDomicilio,30);
-                cout<<"\n\n";
-                fflush(stdin);
-                cout<<"Ingresa el n\243mero de telefono del cliente: ";
-                cin.getline(auxCelular,20);
-                cout<<"\n\n";
-                fflush(stdin);
-                cout<<"Ingresa la fecha de inscripci\242n del cliente: ";
-                cin.getline(auxFecha,30);
-                cout<<"\n\n";
-                auxiliar<<auxCodigo<<"\n\n"<<auxNombre<<"\n\n"<<auxDomicilio<<"\n\n"<<auxCelular
-                        <<"\n\n"<<auxFecha<<"\n\n";
-                cout<<"El Registro se ha modificado correctamente.\n\n";
-            }
-
-
-            else
-            {
-
-                auxiliar<<codigoCliente<<"\n\n"<<nombre<<"\n\n"<<domicilio<<"\n\n"<<celular
-                        <<"\n\n"<<FechaPago<<"\n\n";
-            }
-
-
-            lectura>>codigoCliente;
-        }
-
-    }
-    else
-    {
-        error();
-    }
-
-    if(encontrado==false)
-    {
-        cout<<"\n\nNo se encontr\242 ning\243n registro con ese c\242digo!\n\n";
-    }
-    lectura.close();
-    verificador.close();
-    auxiliar.close();
-    remove("clientes.txt");
-    rename("auxiliar.txt","clientes.txt");
-    pausa();
-}
