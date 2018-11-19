@@ -20,8 +20,7 @@ class buscador //clase padre
 
         int menu(string );
         void busca();
+        void juegos();
 
 
 };
-
-#endif // BUSCADOR_H
