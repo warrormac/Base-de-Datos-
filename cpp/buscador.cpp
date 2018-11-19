@@ -1,27 +1,51 @@
+#include "buscador.h"
+#include <iostream>
 #include <string>
+#include <stdlib.h>
 #include <fstream>
-#ifndef BUSCADOR_H
-#define BUSCADOR_H
+#include <sstream>
 
-using namespace std;
 
-class buscador //clase padre
+int buscador::menu(string x)
 {
-        protected:
-        ifstream arch;
-        string texto;
-        string name;
-        //buscador(string *ptr):name(*ptr){};
-
-        public:
-        void set_values (string *a)
-            { name=*a;}
-
-
-        int menu(string );
-        void busca();
+    stringstream ss;
+    ss<<x<<".txt";
+    string s=ss.str();
+     arch.open(s.data(),ios::in);
+     while (!arch.eof())
+    {
+        getline(arch,texto);
+        cout<<texto<<endl;
+    }
+}
 
 
-};
+ void buscador::busca()
+{
+     stringstream ss;
+    ss<<name<<".txt";
+    string s=ss.str();
+     arch.open(s.data(),ios::in);
+     while (!arch.eof())
+    {
+        getline(arch,texto);
+        cout<<texto<<endl;
+    }
+}
 
-#endif // BUSCADOR_H
+void buscador::juegos()
+{
+    
+    
+ stringstream ss;
+    ss<<name<<".docx";
+    string s=ss.str();
+     arch.open(s.data(),ios::in);
+     while (!arch.eof())
+    {
+        getline(arch,texto);
+        cout<<texto<<endl;
+    }
+    
+    
+}
