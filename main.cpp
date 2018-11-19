@@ -85,7 +85,7 @@ int main()
                     system("pause");
                 }
                 else
-                    nom.busca();
+                    nom.juegos();
                 system("pause");
                 z=1;
             }
@@ -128,4 +128,4 @@ int main()
                         cin>>x;}}}
     }
 }
-}
+
