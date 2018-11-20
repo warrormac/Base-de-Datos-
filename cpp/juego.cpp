@@ -49,7 +49,7 @@ void juego::nom_juego()
     nombre_juegos[40]="WoW"; nombre_juegos[41]="Final Fantasy 15";
     nombre_juegos[42]="South Park: The Stick of Truth"; nombre_juegos[43]="NBA 2K";
     nombre_juegos[44]="FIFA 19"; nombre_juegos[45]="WWE 2K";
-    nombre_juegos[46]="Rocket league"; nombre_juegos[47]="Madden NFL";
+    nombre_juegos[46]="Rocket League"; nombre_juegos[47]="Madden NFL";
     nombre_juegos[48]="Steep"; nombre_juegos[49]="Gran Turismo Sport";
     nombre_juegos[50]="Tony Hawks Pro Skater";nombre_juegos[51]="Wii Sports";
 
