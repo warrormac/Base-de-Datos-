@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <string>
 #include <stdlib.h>
@@ -8,11 +9,7 @@
 
 using namespace std;
 
-template <class T>
-ranking<T>::ranking(int x):equipo(x)
-{
 
-}
 
 template <class T>
 T ranking<T>::categoria()
