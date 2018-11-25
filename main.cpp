@@ -69,7 +69,6 @@ int main()
                 getline(cin,game2);
                 cout<<"ingrese el nombre del juego: ";
                 getline(cin,game2);
-                cout<<game2;
                 ptr=&game2;
 
                 juego nom(ptr);
@@ -128,4 +127,5 @@ int main()
                         cin>>x;}}}
     }
 }
+
 
