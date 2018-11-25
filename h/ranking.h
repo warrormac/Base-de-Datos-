@@ -6,7 +6,7 @@
 using namespace std;
 
 template <class T>
-class ranking:public buscador
+class ranking
 {
     public:
         int equipo;
@@ -16,7 +16,7 @@ class ranking:public buscador
 
     public:
 
-        ranking(int x);
+        ranking(int x){equipo=x;};
         T categoria();
 
         T ranks(T valor);
