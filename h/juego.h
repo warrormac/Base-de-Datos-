@@ -6,12 +6,13 @@
 
 using namespace std;
 
-class juego: public buscador
+class juego:public buscador
+
 {
      public:
         string names;
         string *ptr;
-        juego(string *x):names(*x){};
+        juego(string *x):buscador(*x){};
 
 
     public:
