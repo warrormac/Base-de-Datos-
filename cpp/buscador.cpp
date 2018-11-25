@@ -35,10 +35,10 @@ int buscador::menu(string x)
 
 void buscador::juegos()
 {
-    
-    
+
+
  stringstream ss;
-    ss<<name<<".docx";
+    ss<<name<<".txt";
     string s=ss.str();
      arch.open(s.data(),ios::in);
      while (!arch.eof())
@@ -46,6 +46,6 @@ void buscador::juegos()
         getline(arch,texto);
         cout<<texto<<endl;
     }
-    
-    
+
+
 }
