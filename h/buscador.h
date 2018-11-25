@@ -14,13 +14,16 @@ class buscador //clase padre
         //buscador(string *ptr):name(*ptr){};
 
         public:
-        void set_values (string *a)
-            { name=*a;}
+        buscador(string *a):name(*a){};
+        buscador(string a):name(a){};
 
 
-        int menu(string );
+
+
+
         void busca();
         void juegos();
 
 
 };
+#endif
