@@ -6,18 +6,7 @@
 #include <sstream>
 
 
-int buscador::menu(string x)
-{
-    stringstream ss;
-    ss<<x<<".txt";
-    string s=ss.str();
-     arch.open(s.data(),ios::in);
-     while (!arch.eof())
-    {
-        getline(arch,texto);
-        cout<<texto<<endl;
-    }
-}
+
 
 
  void buscador::busca()
@@ -35,8 +24,6 @@ int buscador::menu(string x)
 
 void buscador::juegos()
 {
-
-
  stringstream ss;
     ss<<name<<".txt";
     string s=ss.str();
@@ -46,6 +33,4 @@ void buscador::juegos()
         getline(arch,texto);
         cout<<texto<<endl;
     }
-
-
 }
