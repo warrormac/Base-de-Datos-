@@ -8,6 +8,7 @@
 #include "include/juego.h"
 #include "include/ranking.h"
 #include "src\ranking.cpp"
+#include "menu.h"
 
 using namespace std;
 
@@ -18,13 +19,15 @@ int main()
     int x=1,y;   //Este decide la opcion del menu
     int z=0;
     int cat=0;
+    string mm="menu";
+    string c="creditos";
     string *ptr;
 
 
     while (x!=0) //este es el menu
     {
-        buscador p;
-        p.menu("menu");
+        menu m(mm);
+        m.print();
         cin>>x;
         z=0;
 
@@ -37,7 +40,7 @@ int main()
                 game="categorias";
                 ptr=&game;
                 juego nomb(ptr);
-                nomb.set_values(ptr);
+                //nomb.buscador(ptr);
                 nomb.busca();
 
                 getline(cin,game1);
@@ -45,8 +48,9 @@ int main()
                 getline(cin,game1);
                 ptr=&game1;
 
+
                 juego nomb1(ptr);
-                nomb1.set_values(ptr);
+                //nomb1.buscador(ptr);
                 nomb1.nombres();
                 cat=nomb1.buscar_juego();
 
@@ -72,7 +76,7 @@ int main()
                 ptr=&game2;
 
                 juego nom(ptr);
-                nom.set_values(ptr);
+                //nom.set_values(ptr);
                 nom.nom_juego();
 
                 cat=nom.buscar_juego();
@@ -124,8 +128,15 @@ int main()
                     }
                     if (z==0){
                         cout<<"Opcion invalida\nIngrese categoria de ranking de 1 a 4\n(1 siendo los top sellers y 4 los que estan en sale):  ";
-                        cin>>x;}}}
+                        cin>>x;}
+                }
+                if (x=5)
+                {
+                    menu cc(c);
+                    cc.print();
+                }
+                if (x==0)
+                    break;
+            }
     }
 }
-
-
