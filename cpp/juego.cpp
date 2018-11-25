@@ -26,11 +26,11 @@ void juego::nombres()
 void juego::nom_juego()
 {
     string nombre_juegos[52];
-    nombre_juegos[0]="Metro Exodus";nombre_juegos[1]="Halo 5";
+    nombre_juegos[0]="Metro Exodus";nombre_juegos[1]="halo 5";
     nombre_juegos[2]="Battlefield 5";nombre_juegos[3]="Call of Duty Black Ops 4";
     nombre_juegos[4]="PUBG";nombre_juegos[5]="Fortnite";
     nombre_juegos[6]="Destiny 2";nombre_juegos[7]="Spyro Reignited Trilogy";
-    nombre_juegos[8]="HITMAN™ 2";nombre_juegos[9]="Minecraft";
+    nombre_juegos[8]="HITMAN� 2";nombre_juegos[9]="Minecraft";
     nombre_juegos[10]="Red Dead Redemption 2";nombre_juegos[11]="Assassins Creed";
     nombre_juegos[12]="Overwatch";nombre_juegos[13]="Destiny";
     nombre_juegos[14]="Soulcalibur 6";nombre_juegos[15]="Street Fighter 30th Anniversary Collection";
@@ -54,7 +54,7 @@ void juego::nom_juego()
     nombre_juegos[50]="Tony Hawks Pro Skater";nombre_juegos[51]="Wii Sports";
 
 
-    this-> ptr=new string[30];
+    this-> ptr=new string[51];
     for (int y=0;y<30;y++)
     {
         ptr[y]=nombre_juegos[y];
@@ -65,7 +65,7 @@ void juego::nom_juego()
 int juego::buscar_juego()
 {
 
-        for (int y=0;y<30;y++)
+        for (int y=0;y<51;y++)
         {
 
             if (name==ptr[y])
