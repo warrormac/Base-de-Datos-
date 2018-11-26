@@ -6,7 +6,7 @@
 
 	3.Comentarios
 	
-	4.Detalles de un Juego
+	4.ESRB
 	
 	5.Creditos
 
