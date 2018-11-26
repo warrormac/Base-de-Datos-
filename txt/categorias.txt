@@ -1,9 +1,9 @@
-      Categorias 
+            Categorias 
 
-Action	 	Action-Adventure
+Action & Adventure      Fighting
 
-Adventure	Role-playing
+Indie             	Roleplaying
 
-Simulation	Strategy
+RPG	                  Shooters
 
-Sport		Idle
+            Sports		
