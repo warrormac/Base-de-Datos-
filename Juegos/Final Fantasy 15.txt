@@ -1,7 +1,21 @@
 	Final Fantasy XV
 
 
-Set in modern times but with a touch of medieval influences, Final Fantasy XV focuses on Noctis Lucis Caelum, the prince of a dynasty which rules a city state that has the last remaining crystal. After the crystal is stolen by an invading nation, Niflheim, a global conflict ensues with all other nations wishing to gain it for themselves. Alongside the main protagonist, Noctis is joined by a military tactician Ignis Scienta, who can deftly handle a katana in battle, a melee fighter named Gladiolus Amicitia, gun-wielding Prompto Argentum, and head of the Royal Family Guards Cor Leonis. There's one other character that appears to get close with Noctis, even if her connection with him is still unknown. Her name is Stella Nox Fleuret, she seems to be strong and fight well with her rapier. Against this backdrop of a world at war, Noctis Lucis Caelum and his closest friends embark on an epic journey to try and get the crystal back.
+Set in modern times but with a touch of medieval influences, 
+Final Fantasy XV focuses on Noctis Lucis Caelum, the prince 
+of a dynasty which rules a city state that has the last 
+remaining crystal. After the crystal is stolen by an invading 
+nation, Niflheim, a global conflict ensues with all other 
+nations wishing to gain it for themselves. Alongside the main 
+protagonist, Noctis is joined by a military tactician Ignis 
+Scienta, who can deftly handle a katana in battle, a melee 
+fighter named Gladiolus Amicitia, gun-wielding Prompto Argentum, 
+and head of the Royal Family Guards Cor Leonis. There's one other 
+character that appears to get close with Noctis, even if her 
+connection with him is still unknown. Her name is Stella Nox Fleuret, 
+she seems to be strong and fight well with her rapier. Against this 
+backdrop of a world at war, Noctis Lucis Caelum and his closest 
+friends embark on an epic journey to try and get the crystal back.
 
 Release:  03.06.2018
 
