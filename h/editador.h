@@ -1,52 +1,24 @@
 #include <string>
-#ifndef EDITOR_H
-#define EDITOR_H
+#include <fstream>
+#ifndef EDITADOR_H
+#define EDITADOR_H
 
 using namespace std;
 
-class editor
+class editador
 {
-    public:
-        string nombre;
-        editador(string *x):nombre(*x){};
-
-
-    public:
-        void buscar();
-};
-
-class cliente {
+        protected:
     
-   public:
-    string nombre;
-    int id;
-    string dir;
-    int cat;
-    
-    public:
-
-        void buscarcliente();
-        void categoria();
+        ifstream arch;
+        string texto;
+        string name;
         
-        ~cliente(){};
-
-};
-
-class kommentar {
-    
-   public:
-   string komment;
-    
-    public:
-
-        void buscarjuego();
-        void agregark();
-       
-
-        ~kommentar(){};
-
-};
-
-    
+        public:
+        editador(string *a):name(*a){};
         
-#endif // EDITOR_H
+        void busca();
+        void edita();
+
+
+};
+#endif
