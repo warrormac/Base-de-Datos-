@@ -1,0 +1,29 @@
+	       		Todos los Juegos
+
+1.Assassins Creed Origins		2.Adventure Time Pirates of the Enchiridion
+3.Battlefield 5				4.Call of Duty Black Ops 4
+5.Darksiders 3				6.Dark Souls 3
+7.Dragon Ball Fighterz			8.Destiny 
+9.Destiny 2				10.Diablo 3
+11.Fallout 76				12.FIFA 19
+13.Final Fantasy 15			14.Fortnite
+15.Gran Turismo Sport			16.HITMAN 2
+17.Injustice 2				20.Killer Instinct
+21.Kingdom Hearts 3			22.Layer of Fear
+23.Madden NFL				24.Marvel VS Capcom
+25.Metro Exodus				26.Minecraft
+27.Mortal Kombat XL			28.NARUTO SHIPPUDE
+29.NBA 2K				30.Next Up Hero
+31.Overwatch				32.PUBG
+33.Resident Evil 2			34.Rocket League
+35.Sky Force Reloaded			36.Soulcalibur 6
+37.South Park The Stick of Truth	38.State of Decay 2
+39.Steep				40.Street Fighter 30th Anniversary Collection
+41.Spyro Reignited Trilogy		42.Tekken 7
+43.The Elder Scrolls V			44.The Walking Dead Season 1
+45.The Witcher				46.Tom Clancys The Division 2	
+47.Tony Hawks Pro Skater		48.Warhammer Vermintide 2
+49.Wii Sports				50.WoW
+51.WWE 2K	
+
+
