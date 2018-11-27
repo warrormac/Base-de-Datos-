@@ -14,11 +14,13 @@ using namespace std;
 template <class T>
 T ranking<T>::categoria()
 {
-    string cat[5];
-    cat[1]="uno";cat[2]="dos";
-    cat[3]="tres";cat[4]="cuatro";
-    this -> ptr =new string[5];
-    for (xx=1;xx<5;xx++)
+    string cat[7];
+    cat[1]="C";cat[2]="E";
+    cat[3]="E+10";cat[4]="T";
+    cat[5]="M";cat[6]="A";
+    cat[7]="RP";
+    this -> ptr =new string[8];
+    for (xx=1;xx<8;xx++)
         ptr[xx]=cat[xx];
 
 
@@ -34,7 +36,7 @@ T ranking<T>::ranks(T valor)
         stringstream ss;
         if (typeid(valor).name()==typeid(int).name())
         {
-            ss<<ptr[equipo]<<".txt";
+            ss<<ptr[valor]<<".txt";
             string s=ss.str();
 
             arch.open(s.data(),ios::in);
@@ -51,6 +53,6 @@ T ranking<T>::ranks(T valor)
         }
 
 
-
-
 }
+
+
