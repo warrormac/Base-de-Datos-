@@ -3,6 +3,7 @@
 #include <string>
 #include <stdlib.h>
 #include <fstream>
+#include <sstream>
 
 using namespace std;
 
@@ -61,7 +62,24 @@ void juego::nom_juego()
     }
 }
 
+void juego::comenta()
+{
+    string x;
+    cout<<"ingrese comentario: ";
+    getline(cin,x);
+    stringstream ss;
+    ss<<"comentario_"<<name<<".txt";
+    string s=ss.str();
+    ofstream comentario(s.data(), ios::app);
+    comentario << x << endl;  comentario.close();
 
+    arch.open(s.data(),ios::in);
+     while (!arch.eof())
+    {
+        getline(arch,texto);
+        cout<<texto<<endl;
+    }
+}
 
 
 int juego::buscar_juego()
