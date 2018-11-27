@@ -11,10 +11,14 @@ class editador
     
         ifstream arch;
         string texto;
-        string name;
+        string nombre;
+        
+        ofstream arch1;
+        string texto1;
+        string nombre1;
         
         public:
-        editador(string *a):name(*a){};
+        editador(string *a):nombre(*a){};
         
         void busca();
         void edita();
