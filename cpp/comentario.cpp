@@ -24,26 +24,12 @@ void buscador::busca()
 void comentario::comenta()
 {
 
-    ifstream game;
-    ofstream nuevotexto;
-    stringstream juego1;
-    juego<<name<<" .txt";
-    string juego2 = juego1.str();
-    
-    game.open(".txt",ios::out);
-    
-    while(!game.eof())
-    {
-        while(filein >> strTemp)
-    {
-        if(strTemp == strReplace){
-            strTemp = strNew;
-            //found = true;
-        }
-        strTemp += "\n";
-        fileout << strTemp;
-        //if(found) break;
-    }
-    return 0;
-           
-        
+   #include<iostream>
+#include <fstream>
+
+using namespace std;
+ int main() {
+ofstream comentario("comentario.txt", ios::app);
+comentario << "hola mundo" << endl;  comentario.close();
+ return 0; }
+
