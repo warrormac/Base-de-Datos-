@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class comentario
+class comentario:public buscador
 {
         protected:
     
