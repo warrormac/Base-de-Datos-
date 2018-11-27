@@ -1,0 +1,24 @@
+  	   Tienda de Juegos
+	 	
+	     BASE DE DATOS
+
+	CIENCIA DE LA COMPUTACION
+
+			INTEGRANTES:
+
+			     -ANDRE ALVAREZ
+				
+			     -LUIS ZAPATER
+
+				2DO SEMESTRE
+
+				2018
+
+Como utilizar nuestra base de datos:
+
+Esta Base de Datos tiene un buscador de Categorias, buscador 
+de juegoss, comentarios y el ESRB de los 
+juegos. 
+Para poder usar esta base de datos, se deben descargar todos 
+los .txt que están en la carpeta txt, juegos y ESRB. Ya que 
+el código luego los llamara.
