@@ -1,11 +1,11 @@
 #include <string>
 #include <fstream>
-#ifndef EDITADOR_H
-#define EDITADOR_H
+#ifndef COMENTARIO_H
+#define COMENTARIO_H
 
 using namespace std;
 
-class editador
+class comentario
 {
         protected:
     
@@ -21,7 +21,7 @@ class editador
         editador(string *a):nombre(*a){};
         
         void busca();
-        void edita();
+        void comenta();
 
 
 };
