@@ -1,0 +1,9 @@
+	ESRB Rating 
+
+1. C For Childhood
+2. Rated E for Everyone
+3. Rated E+10 for 10+
+4. Rated T For Teen
+5. Rated M For Mature
+6. Rated A For 18+
+7. Rated RP for Not Rated yet
