@@ -5,11 +5,7 @@
 #include <fstream>
 #include <sstream>
 
-
-
-
-
- void buscador::busca()
+void buscador::busca()
 {
      stringstream ss;
     ss<<name<<".txt";
