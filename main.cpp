@@ -19,14 +19,13 @@ int main()
     int x=1,y;   //Este decide la opcion del menu
     int z=0;
     int cat=0;
-    string mm="menu";
-    string c="creditos";
+
     string *ptr;
 
 
     while (x!=0) //este es el menu
     {
-        menu m(mm);
+        menu m("menu");
         m.print();
         cin>>x;
         z=0;
@@ -40,7 +39,6 @@ int main()
                 game="categorias";
                 ptr=&game;
                 juego nomb(ptr);
-                //nomb.buscador(ptr);
                 nomb.busca();
 
                 getline(cin,game1);
@@ -50,7 +48,6 @@ int main()
 
 
                 juego nomb1(ptr);
-                //nomb1.buscador(ptr);
                 nomb1.nombres();
                 cat=nomb1.buscar_juego();
 
@@ -76,7 +73,6 @@ int main()
                 ptr=&game2;
 
                 juego nom(ptr);
-                //nom.set_values(ptr);
                 nom.nom_juego();
 
                 cat=nom.buscar_juego();
@@ -91,17 +87,22 @@ int main()
                     nom.juegos();
                 system("pause");
                 z=1;
+
             }
              if (x==4)
             {
                 string q;
                 int y;
-                string lista[5];
-                lista[1]="uno";lista[2]="dos";
-                lista[3]="tres";lista[4]="cuatro";
-                cout<<"Ingrese una categoria entre 1 a 4,\n(1 siendo los top sellers y 4 los que estan en sale): ";
+                string lista[8];
+                lista[1]="C";lista[2]="E";
+                lista[3]="E+10";lista[4]="T";
+                lista[5]="M";lista[6]="A";
+                lista[7]="RP";
+                menu l("ESRB");
+                l.print();
                 cin>>q;
-                    if (q=="1" || q=="2" || q=="3" || q=="4")
+                cout<<q;
+                    if (q=="1" || q=="2" || q=="3" || q=="4" || q=="5" || q=="6" || q=="7")
                     {
                         stringstream conv(q);
                         conv>>y;
@@ -110,11 +111,11 @@ int main()
                         XX.ranks(y);
                         z++;
                     }
-                    if (q=="uno" || q=="dos" || q=="tres" || q=="cuatro")
+                    if (q== "C" || q=="E" || q=="E+10" || q=="T" || q=="M" || q=="A" || q=="RP")
                     {
 
 
-                        for (int cont=0;cont<5;cont++)
+                        for (int cont=0;cont<8;cont++)
                         {
                             if (q==lista[cont])
                             {
@@ -130,13 +131,18 @@ int main()
                         cout<<"Opcion invalida\nIngrese categoria de ranking de 1 a 4\n(1 siendo los top sellers y 4 los que estan en sale):  ";
                         cin>>x;}
                 }
-                if (x=5)
+                if (x==5)
                 {
-                    menu cc(c);
+                    menu cc("Creditos");
                     cc.print();
+                    z=1;
+                    system("pause");
+
                 }
+
                 if (x==0)
                     break;
+
             }
-    }
-}
+    }}
+
