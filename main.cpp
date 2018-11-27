@@ -89,6 +89,30 @@ int main()
                 z=1;
 
             }
+            if (x==3)
+            {
+                string game3;
+                getline(cin,game3);
+                cout<<"ingrese el nombre del juego: ";
+                getline(cin,game3);
+                ptr=&game3;
+
+                juego nom(ptr);
+                nom.nom_juego();
+
+                cat=nom.buscar_juego();
+
+                if (cat==0)
+                {
+                    cout<<"Juego no encontrado, intente de nuevo: \n";
+
+                    system("pause");
+                }
+                else
+                    nom.comenta();
+                system("pause");
+                z=1;
+            }
              if (x==4)
             {
                 string q;
